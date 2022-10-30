@@ -25,7 +25,7 @@ public class Operations {
     }
 
     private static boolean checkOutOfBound(int[][] matrix, int targetX, int targetY) {
-        boolean returnValue = targetX <= 0 || targetY >= matrix.length || targetX >= matrix[targetY].length;
+        boolean returnValue = targetX < 0 || targetY >= matrix.length || targetX >= matrix[targetY].length;
         return returnValue;
     }
 
